@@ -1,0 +1,34 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+html, body {
+  width: 100%;
+  height: 100%;
+  background-color: #f2f2f2;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto' !important;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.bio-container {
+  max-width: 30vw;
+}
+
+.bio-text {
+  line-height: 1.5;
+}
+
+.left-margin {
+  margin-left: 0.5vw;
+}
