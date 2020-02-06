@@ -1,5 +1,4 @@
 /* You can add global styles to this file, and also import other style files */
-@import url('https://fonts.googleapis.com/css?family=Roboto');
 
 html, body {
   width: 100%;
@@ -22,7 +21,12 @@ body {
 }
 
 .bio-container {
-  max-width: 30vw;
+  @media(orientation: landscape) {
+    max-width: 30vw;
+  }
+  @media(orientation: portrait) {
+    max-width: 50vw;
+  }
 }
 
 .bio-text {
