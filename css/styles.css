@@ -1,0 +1,21 @@
+html, body {
+    height: 100%;
+}
+
+.icon {
+    vertical-align: middle;
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 50%;
+}
+
+.avatar {
+    vertical-align: middle;
+    width: 5em;
+    height: 5em;
+    border-radius: 50%;
+}
+
+.avatar-container {
+    width: 7em !important;
+}

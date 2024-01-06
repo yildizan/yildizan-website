@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <title>Anıl Yıldız</title>
+
+  <!-- analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122642684-3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'UA-122642684-3');
+  </script>
+
+  <!-- search engine -->
+  <meta name="description" content="Personal website of Anıl Yıldız.">
+  <meta name="keywords" content="anil,yildiz,software,developer,istanbul,turkey,prague,czechia,itu,microsoft">
+  <meta name="robots" content="index,nofollow">
+
+  <!-- open graph -->
+  <meta property="og:title" content="Anıl Yıldız">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://yildizan.com">
+  <meta property="og:description" content="Personal website of Anıl Yıldız.">
+
+  <!-- style -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link href="css/styles.css" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- font awesome -->
+  <script defer src="js/font-awesome.js"></script>
+</head>
+<body>
+
+  <div class="w-100 h-100 d-flex align-items-center justify-content-center">
+    <div class="card shadow-lg">
+      <div class="card-header d-flex p-2">
+        <div class="avatar-container">
+          <img class="avatar" src="assets/avatar.jpg" alt="Me" />
+        </div>
+        <div class="d-flex align-items-center">
+          <p class="h5">
+            Anıl Yıldız
+            <br />
+            <small class="text-body-secondary">Software Developer</small>
+          </p>
+        </div>
+      </div>
+      <div class="card-body">
+        <p class="card-text">
+          Hello, Merhaba, Ahoj! This is Anıl, a software developer based in Czechia.
+          I like 🎸playing guitar and 🚴cycling.
+        </p>
+        <div class="d-flex justify-content-center">
+          <a class="btn m-1" href="http://newsfrom.news" target="_blank">
+            <img class="icon" src="assets/newsfrom.jpg"></i>
+            <span class="left-margin">NewsFrom</span>
+          </a>
+          <a class="btn m-1" href="https://www.linkedin.com/in/anil-yildiz" target="_blank">
+            <i class="fab fa-linkedin fa-lg" style="color: #0077B5"></i>
+            <span class="left-margin">LinkedIn</span>
+          </a>
+          <a class="btn m-1" href="https://github.com/yildizan" target="_blank">
+            <i class="fab fa-github fa-lg"></i>
+            <span class="left-margin">GitHub</span>
+          </a>
+          <a class="btn m-1" href="mailto:anil.yildiz@outlook.com.tr">
+            <i class="fas fa-envelope" style="color: #DBA40B"></i>
+            <span class="left-margin">Contact</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript">
+
+    const hours = new Date().getHours();
+    const isDayTime = hours > 8 && hours < 20;
+
+    let htmlAttr;
+    let btnClass;
+    if (isDayTime) {
+      htmlAttr = 'light';
+      btnClass = 'btn-light';
+    } else {
+      htmlAttr = 'dark';
+      btnClass = 'btn-secondary';
+    }
+
+    const html = document.documentElement;
+    html.setAttribute('data-bs-theme', htmlAttr);
+
+    const buttons = document.getElementsByClassName('btn');
+    Array.prototype.forEach.call(buttons, function(button) {
+      button.classList.add(btnClass);
+    });
+
+  </script>
+</body>
+</html>
